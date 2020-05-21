@@ -3,6 +3,6 @@ from fixture.application import Application
 
 @pytest.fixture(scope='session')
 def app(request):
-    fixture = Application("C:\\Users\\Администратор\\Desktop\Manya\\test\\AddressBook.exe")
+    fixture = Application("C:\\Users\\Администратор\\Desktop\\Manya\\test\\AddressBook.exe")
     request. addfinalizer(fixture.destroy)
     return fixture
